@@ -1,0 +1,24 @@
+.adress__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.adress__link {
+    transition: color $duration250ms $time-function;
+
+    display: block;
+
+    font-style: normal;
+    @include font(400, 14px, 24/14, null);
+    text-align: center;
+
+    color: $adress-color;
+    
+    &:hover,
+    &:focus {
+        color: $link-accent;
+        }
+}
+
+.adress__link--white {
+    color: $secondary-accent;
+}

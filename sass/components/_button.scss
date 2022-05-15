@@ -1,0 +1,20 @@
+/* Button */
+.btn {
+  transition: background-color $duration250ms $time-function;
+
+  border-radius: 4px;
+  border: transparent;
+  padding: $margin10 $padding32;
+  min-width: 200px;
+  
+  @include font(700, 16px, 30/16, 0.06em);
+  cursor: pointer;
+
+  background-color: $link-accent;
+  color: $secondary-accent;
+
+  &:hover,
+  &:focus {
+      background-color: $secbtn-color;
+    }
+}
